@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Curso Git e GitHub EnComp </title>
+    <link rel="icon" type="imagem/png" href="imagens/icone.png" />
+    <link href="estilo.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1> Curso de Git e GitHub </h1>
+    </header>
+
+    <main>
+        <p class="about"> Este site foi elaborado para os alunos do curso de Git e GitHub ofertado no VI EnComp no ano de 2020. O material aqui disponibilizado foi ensinado durante todo o curso, além de ser apenas o básico para iniciar no mundo de Git e GitHub. Estarei atualizando este site com alguns links para aprofundar mais o seu conhecimento além de referências utilizadas para todo o material. Bons estudos! </p>
+        
+        <h2 class="title"> Configurando o Git </h2>
+        <div class="conteudo">
+            <p> git config --global user.name "Seu nome" </p>
+            <p> git config --global user.email "exemplo@seuemail.com.br" </p>
+        </div>
+
+        <h2 class="title"> Criando uma pasta </h2>
+        <div class="conteudo">
+            <p> mkdir nomeDaPasta </p>
+        </div>
+
+        <h2 class="title"> Inicializando </h2>
+        <div class="conteudo">
+            <p> git init // Lembre-se de estar dentro da pasta criada </p>
+        </div>
+
+        <h2 class="title"> Ver se houve alterações na pasta para novo ponto na história </h2>
+        <div class="conteudo">
+            <p> git status </p>
+            <p> // Caso aparecer em vermelho ainda não foi adicionado no histórico </p>
+            <p> // Caso aparecer em verde já foi adicionado no histórico </p>
+            <p> // Caso contrário, significa que não tem nada alterado ainda </p>
+        </div>
+
+        <h2 class="title"> Criar arquivo </h2>
+        <div class="conteudo">
+            <p> git code nomeArquivo.extensao // Ex.: txt, html, css, md... </p>
+        </div>
+
+        <h2 class="title"> Adicionar alterações no ponto da história </h2>
+        <div class="conteudo">
+            <p> git add nomeArquivo.extensao // Adiciona o arquivo para o próximo ponto do histórico </p>
+            <p> git add . // Adiciona todas as alterações para o próximo ponto do histórico </p>
+        </div>
+
+        <h2 class="title"> Fazer um commit e acessar o histórico </h2>
+        <div class="conteudo">
+            <p> git commit -m "Mensagem de sua preferência" // Marcar ponto no histórico </p>
+            <p> git log // Acessa o histórico </p>
+        </div>
+
+        <h2 class="title"> Push e Pull </h2>
+        <div class="conteudo">
+            <p> git push -u origin master </p>
+            <p> // Envia para o repositório remoto origin na branch master os commits do seu repositório local </p>
+            <p> git pull origin </p>
+            <p> // Traz para seu repositório local os commits do repositório remoto origin </p>
+        </div>
+
+        <h2 class="title"> Branch(es) </h2>
+        <div class="conteudo">
+            <p> git branch nomeDaBranch // Cria a branch </p>
+            <p> git branch // Mostra as branches existentes </p>
+            <p> git pull origin </p>
+            <p> git checkout nomeDaBranch // Vai para a branch selecionada </p>
+            <p> git remote / Mostra os repositórios remotos existentes </p>
+        </div>
+
+        <h2 class="title"> Fork </h2>
+        <div class="conteudo">
+            <p> git clone linkDoSeuFork // Clona o seu fork </p>
+            <p> git remote add nomeDoSeuRemote linkDoOriginal // Adiciona um remote para o repositório original </p>
+            <p> git fetch nomeDoSeuRemote // Atualiza o remote </p>
+            <p> git rebase nomeDoSeuRemote/master // Atualiza o repositório local </p>
+        </div>
+
+        <h2 class="title"> Manter Fork atualizado </h2>
+        <div class="conteudo">
+            <p> git fetch nomeDoSeuRemote </p>
+            <p> git rebase nomeDoSeuRemote/master </p>
+            <p> git push origin master </p>
+        </div>
+
+        <p class="about"> Feito por Marisa Vieira Santos :) </p>
+    </main>
+</body>
+</html>
